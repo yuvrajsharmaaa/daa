@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief Resources Distributer | 0/1 Knapsack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Project: Disaster Relief Resources Distributer | 0/1 Knapsack Algorithm</h1>
+    </div>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-header">Disaster Types</div>
+            <div id="disasterList"></div>
+        </div>
+
+        <div class="content">
+            <div class="panel panel-left">
+                <h2 class="panel-title">Resources Distributer</h2>
+                
+                <div class="capacity-input">
+                    <label for="capacity">Max Capacity (kg):</label>
+                    <input type="number" id="capacity" value="100" min="1">
+                </div>
+
+                <table class="resource-table">
+                    <thead>
+                        <tr>
+                            <th>Resource Name</th>
+                            <th>Value ($)</th>
+                            <th>Weight (kg)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="resourceTable"></tbody>
+                </table>
+
+                <button class="btn-add" onclick="app.addResource()">Add Resource</button>
+            </div>
+
+            <div class="panel">
+                <h2 class="panel-title">0/1 Knapsack Allocation</h2>
+                
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-label">Total Value</div>
+                        <div class="stat-value green" id="totalValue">$0.00</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Total Weight</div>
+                        <div class="stat-value" id="totalWeight">0 kg</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Capacity Used</div>
+                        <div class="stat-value blue" id="capacityUsed">0%</div>
+                    </div>
+                </div>
+
+                <div class="metadata" id="metadata"></div>
+
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Resource</th>
+                            <th>Status</th>
+                            <th>Weight (kg)</th>
+                            <th>Value ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsTable"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
