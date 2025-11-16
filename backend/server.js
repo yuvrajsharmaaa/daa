@@ -27,9 +27,15 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Something went wrong!' });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server is running on http://localhost:${PORT}`);
-  console.log(`📊 API endpoints:`);
-  console.log(`   - POST http://localhost:${PORT}/api/knapsack/calculate`);
-  console.log(`   - GET  http://localhost:${PORT}/api/disasters`);
-});
+// For local development
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`🚀 Server is running on http://localhost:${PORT}`);
+    console.log(`📊 API endpoints:`);
+    console.log(`   - POST http://localhost:${PORT}/api/knapsack/calculate`);
+    console.log(`   - GET  http://localhost:${PORT}/api/disasters`);
+  });
+}
+
+// Export for Vercel serverless
+module.exports = app;
