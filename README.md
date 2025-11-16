@@ -6,12 +6,12 @@
 **Submitted by:**
 
 **Team Members:**
-1. Student A
-2. Student B
-3. Student C
+1. Yuvraj Sharma 1/23/SET/BCS/422
+2. Chirag Miglani 1/23/SET/BCS/414
+3. Utsav Kumar 1/23/SET/BCS/428
 
 **Under the Guidance of:**
-Faculty Name: Dr. XYZ
+Faculty Name: Mrs.Deepika Kataria
 
 **Department of Computer Science and Engineering**  
 **Manav Rachna International Institute of Research and Studies**
@@ -571,7 +571,7 @@ For queries and support:
 
 We would like to express our sincere gratitude to:
 
-- **Dr. XYZ**, our project guide, for valuable guidance and continuous support
+- **Mrs. Deepika Kataria**, our project guide, for valuable guidance and continuous support
 - **Department of Computer Science and Engineering**, MRIIRS, for providing necessary resources
 - **Faculty members** who provided constructive feedback during project reviews
 - **Open-source community** for excellent documentation and learning resources
